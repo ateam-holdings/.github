@@ -1,0 +1,18 @@
+# 前提として全て無視する設定(許可するものは以下で設定)
+/*
+ 
+# .gitignore 自体は追跡対象にする
+!/.gitignore
+ 
+# .github ディレクトリは許可(中身は下で個別制御)
+!/.github/
+/.github/*
+ 
+# ISSUE_TEMPLATE ディレクトリは許可(中身は下で個別制御)
+!/.github/ISSUE_TEMPLATE/
+/.github/ISSUE_TEMPLATE/*
+ 
+# 許可するテンプレートファイルのみ明示的に追跡対象にする
+!/.github/ISSUE_TEMPLATE/bug_report.md
+!/.github/ISSUE_TEMPLATE/feature_request.md
+!/.github/ISSUE_TEMPLATE/config.yml
